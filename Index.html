@@ -1,0 +1,80 @@
+<html>
+
+<head>
+    <title>JS Fundamentals</title>
+</head>
+
+<body onload="handleOnload()">
+    <h1 id="lblDateInfo" />
+
+    <p>If the alerts stopped, just refresh the page </p>
+    <script src="js/js_test.js"> </script>
+
+    <hr>
+    <h1 onmouseover="handleMouseOverEvent(this)" onmouseout="handleMouseOutEvent(this)">Mouse Over Me</h1>
+
+    <hr>
+    <form name="calcForm">
+        Number 1:<input type="text" name="num1" /><br>
+        Number 2:<input type="text" name="num2" /><br>
+        Result :<input type="text" name="result" /><br>
+        <input type="button" name="btnAddition" value="+" onclick="calculate(this.value)" />
+        <input type="button" name="btnSubtraction" value="-" onclick="calculate(this.value)" />
+        <input type="button" name="btnMultiplication" value="*" onclick="calculate(this.value)" />
+        <input type="button" name="btnDivision" value="/" onclick="calculate(this.value)" />
+    </form>
+
+    <hr>
+    <select onchange="handleOnChangeEvent(this.value)">
+        <option value="">Select a color</option>
+        <option value="blue">Blue</option>
+        <option value="red">Red</option>
+        <option value="gray">Gray</option>
+    </select>
+
+    <hr>
+    <form name="stringForm">
+        <p>String properties</p>
+        <p>Try with: Hello world</p>
+        Enter text:<input type="text" name="txt_text" value="Hello world" /><br>
+        <input type="button" name="btnStringProperties" value="Find Properties" onclick="stringProperties()" /><br>
+        <textarea type="text" name="txtLength"></textarea><br>
+    </form>
+
+    <hr>
+    <form name="arraysForm">
+        <p>Arrays </p>
+        <p>lets do it</p>
+        <textarea type="text" name="txtArrays"></textarea><br>
+        <textarea type="text" name="txtArrays2"></textarea><br>
+        <textarea type="text" name="txtArrays3"></textarea><br>
+    </form>
+
+
+    <hr>
+    <p>Create and Remove Nodes</p>
+    <div id="div1">
+        <p id="p1">Node 1</p>
+        <p id="p2">Node 2</p>
+    </div>
+
+    <input type="button" value="remove" onclick="handleRemove()">
+    <input type="button" value="create" onclick="handleCreate()">
+
+
+    <hr>
+    <form name="navigatorForm">
+        <p>Navigator object </p>
+        <textarea type="text" name="txtNavigator"></textarea><br>
+        <textarea type="text" name="txtNavigator2"></textarea><br>
+    </form>
+
+
+    <hr>
+    <form name="objectForm">
+        <p>Objects - Blog Post </p>
+        <textarea type="text" name="txtObject"></textarea><br>
+    </form>
+</body>
+
+</html>

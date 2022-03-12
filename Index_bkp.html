@@ -1,0 +1,155 @@
+<html>
+
+<head>
+    <title>JS Fundamentals</title>
+    <script src="js/external.js"></script>
+
+    <script>
+        //this is a comments test
+        document.write("InternalScript from HEAD");
+
+        //notice that only the external js is displayed in the document
+    </script>
+</head>
+
+<body>
+    <h1>This is a test</h1>
+    <p>This is a test</p>
+
+    <script>
+        /*
+            this is also a comment
+            this is also a comment
+            */
+        document.write("InternalScript from BODY <br>");
+
+        document.write("<hr>");
+    </script>
+
+    <!-- <p>This is a comment too</p> -->
+
+    <h1>Variables</h1>
+    <p>Let's see how it's works</p>
+    <script>
+        var x = 10;
+        var _x = 20;
+        var $x = 20.45;
+        var X = 30;
+        var s = "asd";
+
+        document.write(x);
+        document.write("<br>");
+
+        document.write(_x);
+        document.write("<br>");
+
+        document.write($x);
+        document.write("<br>");
+
+        document.write(X);
+        document.write("<br>");
+
+        document.write(s);
+        document.write("<br>");
+
+        document.write("<hr>");
+    </script>
+
+
+
+    <h1>Operations</h1>
+    <p>Let's see how it's works</p>
+    <script>
+        var x = 4;
+        var y = 28;
+
+        document.write("Number one: ");
+        document.write(x);
+        document.write("<br>");
+
+        document.write("Number two: ");
+        document.write(y);
+        document.write("<br>");
+
+        document.write("---- ----- ----- ----- -----");
+        document.write("<br>");
+
+        document.write("Addition: ");
+        document.write(x + y);
+        document.write("<br>");
+
+        document.write("Subtraction: ");
+        document.write(x - y);
+        document.write("<br>");
+
+        document.write("Multiplication: ");
+        document.write(x * y);
+        document.write("<br>");
+
+        document.write("Division: ");
+        document.write(x / y);
+        document.write("<br>");
+
+        document.write("<hr>");
+    </script>
+
+
+    <h1>Plus and Strings</h1>
+    <p>Let's see how it's works</p>
+    <script>
+        var x = 10;
+        var y = 20;
+
+        var z = x + y;
+
+        document.write("Number one: ");
+        document.write(x);
+        document.write("<br>");
+
+        document.write("Number two: ");
+        document.write(y);
+        document.write("<br>");
+
+        document.write("Result: ");
+        document.write(z);
+        document.write("<br>");
+
+        document.write("---- ----- ----- ----- -----");
+        document.write("<br>");
+
+        var a = "10";
+        var b = "20";
+
+        var c = a + b;
+
+        document.write("String one: ");
+        document.write(a);
+        document.write("<br>");
+
+        document.write("String two: ");
+        document.write(b);
+        document.write("<br>");
+
+        document.write("Result: ");
+        document.write(c);
+        document.write("<br>");
+
+        document.write("<hr>");
+    </script>
+
+    <script>
+        //one ok button
+        alert("This is an alert test");
+
+        confirm("Click here to process");
+    </script>
+
+    <script>
+        //PROMPT POPUP
+        var s = prompt("Enter your name");
+
+        alert(s);
+    </script>
+</body>
+
+</html>

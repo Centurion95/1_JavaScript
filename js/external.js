@@ -1,0 +1,1 @@
+document.write("<b>ExternalScript from external.js</b>")
